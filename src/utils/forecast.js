@@ -12,7 +12,7 @@ const forecast = (longitude,latitude, callback) => {
 		}
 		else{
 			var data = body.current;
-			callback(undefined,data.weather_descriptions[0] +'. It is currently '+data.temperature+" degrees out. It feels like "+data.feelslike+" degrees out")
+			callback(undefined,data.weather_descriptions[0] +'. It is currently '+data.temperature+" degrees Celsius, feels like: "+data.feelslike+" degrees out. There is "+data.precip+"% chance of rain.")
 		}
 	})
 }
