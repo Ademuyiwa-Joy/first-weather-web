@@ -12,7 +12,7 @@ const forecast = (longitude,latitude, callback) => {
 		}
 		else{
 			var data = body.current;
-			callback(undefined,data.weather_descriptions[0] +'. It is currently '+data.temperature+" degrees Celsius, feels like: "+data.feelslike+" degrees out. Precipitation (in mm):"+data.precip+". Humdity: "+data.humidity+"%")
+			callback(undefined,data.weather_descriptions[0] +'. It is currently '+data.temperature+" degrees Celsius, feels like: "+data.feelslike+" degrees out. Precipitation (in mm): "+data.precip+" | Humidity: "+data.humidity+"%")
 		}
 	})
 }
