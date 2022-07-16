@@ -13,7 +13,7 @@ const geocode = (address, callback)=> {
 			callback(undefined, {
 				longitude: response.body[0].lon,
 				latitude: response.body[0].lat,
-				location: response.body[0].state
+				location: "In "+response.body[0].state+", "+response.body[0].country+"."
 			})
 		}
 	})

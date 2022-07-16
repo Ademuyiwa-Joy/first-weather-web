@@ -1,6 +1,6 @@
 const express = require('express');
 const path = require('path');
-const port = 3000;
+const port = process.env.PORT || 3000;
 const hostname = 'localhost';
 const hbs = require('hbs');
 const forecast = require('./utils/forecast.js');
