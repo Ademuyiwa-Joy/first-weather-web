@@ -1,4 +1,4 @@
-//function for converting an address to latitude and longitude
+//function for converting an address to latitude and longitude.
 const request = require('postman-request');
 const geocode = (address, callback)=> {
 	const geocodeURL = 'https://api.openweathermap.org/geo/1.0/direct?q='+address+'&limit=1&appid=be0417bbc54ca5d7163bf20a08b9107c';
