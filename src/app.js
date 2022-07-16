@@ -1,13 +1,11 @@
 const express = require('express');
 const path = require('path');
-
-const hostname = 'localhost';
 const hbs = require('hbs');
 const forecast = require('./utils/forecast.js');
 const geocode = require('./utils/geocode.js');
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT||3000
 
 //defining path for express config
 const publicDirectoryPath = path.join(__dirname, '../public'); 
@@ -99,6 +97,6 @@ app.get('*', (req, res) => { //*: special character representing all routes that
 
 
 
-app.listen(port,hostname, () => {
-	console.log(`Server running on ${hostname}:${port}`)
+app.listen(port, () => {
+	console.log('Server running on '+ port)
 })
