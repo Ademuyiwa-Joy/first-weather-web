@@ -1,12 +1,13 @@
 const express = require('express');
 const path = require('path');
-const port = process.env.PORT || 3000;
+
 const hostname = 'localhost';
 const hbs = require('hbs');
 const forecast = require('./utils/forecast.js');
 const geocode = require('./utils/geocode.js');
 
 const app = express();
+const port = process.env.PORT || 3000;
 
 //defining path for express config
 const publicDirectoryPath = path.join(__dirname, '../public'); 
